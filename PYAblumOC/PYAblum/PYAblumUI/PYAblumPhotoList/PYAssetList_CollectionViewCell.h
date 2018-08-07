@@ -41,15 +41,32 @@ typedef enum{
 
 ///imageView
 @property (nonatomic,strong,readonly) UIImageView *imageView;
+    
 /**
  * image w
  */
 @property (nonatomic,assign) CGFloat imageWidth;
 
+    
+/**
+ 已经选中的cell的蒙版颜色
+ */
+@property (nonatomic,strong) UIColor *selectedColor;
 
 
+/**
+ 未选中的cell，已经选中cell的个数大于等于最大选中数的时候，显示的蒙版颜色
+ */
+@property (nonatomic,strong) UIColor *notSelectedAndOverTopMaxSelectedCountMaskViewColor;
+    
+    
+/**
+ 未选中的cell，已经选中cell的个数大于等于最大选中数的时候，选则button是否接受点击事件 默认为true
+ */
+@property (nonatomic,assign) BOOL notSelectedAndOverTopMaxSelectedCountButtonUserInteractionEnabled;
+    
 /// type 如果default 那么默认创建了一个imageView 和一个button,默认为 deflaut
-@property (nonatomic,assign) Enum_PYAssetList_CollectionViewCell_Type type;
+//@property (nonatomic,assign) Enum_PYAssetList_CollectionViewCell_Type type;
 
 
 /**

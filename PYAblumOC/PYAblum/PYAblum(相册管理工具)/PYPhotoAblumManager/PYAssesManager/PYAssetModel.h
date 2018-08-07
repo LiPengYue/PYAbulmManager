@@ -42,4 +42,8 @@
 @property (nonatomic,assign) BOOL isLoadedImage;
 ///是否显示遮罩 （表示已经到达上线）
 @property (nonatomic,assign) BOOL isShowMask;
+
+- (void)getOriginImage:(void(^)(UIImage *image)) block;
+
+- (void)getDelicateImage: (void(^)(UIImage *image))block;
 @end

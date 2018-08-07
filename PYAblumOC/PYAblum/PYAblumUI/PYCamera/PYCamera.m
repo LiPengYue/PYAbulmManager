@@ -39,12 +39,41 @@
     return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
 }
 
-
-///是否可以打开照相机
-+ (BOOL) isOpenPhotoAlbum {
-    return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
++ (BOOL) isOpenPhotoAlbum: (void(^)(BOOL isOpen))openBlock {
+    ///https://www.jianshu.com/p/e4a2b83c8069
+    __block BOOL isOpen = true;
+    dispatch_group_t group = dispatch_group_create();
+    
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusRestricted) {
+        // 此应用程序没有被授权访问的照片数据。可能是家长控制权限。
+        NSLog(@"因为系统原因, 无法访问相册");
+        isOpen = false;
+    } else if (status == PHAuthorizationStatusDenied) {
+        // 用户拒绝访问相册
+        isOpen = false;
+    } else if (status == PHAuthorizationStatusAuthorized) { // 用户允许访问相册
+        isOpen = true;
+        // 放一些使用相册的代码
+    } else if (status == PHAuthorizationStatusNotDetermined) {
+        // 用户还没有做出选择
+        // 弹框请求用户授权
+        if (openBlock) {
+            dispatch_group_enter(group);
+            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+                // 用户点击了好 : status == PHAuthorizationStatusAuthorized
+                isOpen = status == PHAuthorizationStatusAuthorized;
+                dispatch_group_leave(group);
+            }];
+        }
+    }
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        if (openBlock) {
+            openBlock(isOpen);
+        }
+    });
+    return isOpen;
 }
-
 
 ///是否可以打开前摄像头
 + (BOOL) isOpenCameraDevice_Front {
@@ -115,6 +144,7 @@
     }
     
     [PYAblum.ablum.photographImageArray addObject:originalImage];
+    
 }
 
 ///写入 相册

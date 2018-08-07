@@ -10,9 +10,17 @@
 
 @interface PYCamera : UIImagePickerController
 ///是否可以访问相册
-+ (BOOL) isOpenPhotoAlbum;
+
+/**
+ 是否可以访问相册
+
+ @param openBlock 1. 第一次获取权限，授权按钮点击后会调用block，可以添加图片请求的逻辑。2. 已经授权，再次获取权·限，会调用block
+ @return 是否可以访问
+ */
++ (BOOL) isOpenPhotoAlbum: (void(^)(BOOL isOpen))openBlock;
 ///是否可以打开照相机
 + (BOOL) isOpenCamera;
+
 ///是否可以打开前摄像头
 + (BOOL) isOpenCameraDevice_Front;
 ///是否可以打开后摄像头

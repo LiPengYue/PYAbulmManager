@@ -72,6 +72,7 @@ static PYAblum *ablum;
         return;
     }
     ///缓存照片
+    if (!model.asset) { return; }
     __weak typeof([PYAblum defaultAblum])ablum = [PYAblum defaultAblum];
     CGSize imageSize = [ablum.imageManager getImageSize:model.asset andSetPotoWidth:imageW];
     [ablum.imageManager.cachingImageManager startCachingImagesForAssets:@[model.asset] targetSize:imageSize contentMode:PHImageContentModeAspectFit options:nil];
@@ -328,6 +329,7 @@ static PYAblum *ablum;
  @return 返回被操作后的数组
  */
 + (NSMutableArray <PYAssetModel *>*)getSelectAssetArrayWithClickedModel: (PYAssetModel *)clickedModel andMaxCount:(NSInteger) maxCount andOverTopBlock: (void(^)(NSArray <PYAssetModel *>*modelArray, BOOL isVoerTop))block{
+    
     PYAblum *ablum = [PYAblum ablum];
       NSMutableArray <PYAssetModel *>* beOperatedArray = ablum.selectedAssetModelArray;
     [ablum getAssetWithImageWidth:ablum.selectedImageW andModel:clickedModel andBlock:^(PYAssetModel *assetFirstModel) {
@@ -395,7 +397,19 @@ static PYAblum *ablum;
     return _allPhotoAblumModelArray_Private;
 }
 
-
+- (void) insertAllPhotoAblumModelArray: (NSInteger) index andModel: (PYAssetModel *)model {
+    //传入的参数必须大于或者等于0，否则会返回Null
+    dispatch_semaphore_t lock = dispatch_semaphore_create(1);
+    //wait = 0，则表示不需要等待，直接执行后续代码；wait != 0，则表示需要等待信号或者超时，才能继续执行后续代码。lock信号量减一，判断是否大于0，如果大于0则继续执行后续代码；lock信号量减一少于或者等于0，则等待信号量或者超时。
+    long wait = dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
+    
+    NSMutableArray *array = _allPhotoAblumModelArray_Private.mutableCopy;
+    [array insertObject:model atIndex:index];
+    _allPhotoAblumModelArray_Private = array;
+    //需要执行的代码
+    //signal = 0，则表示没有线程需要其处理的信号量，换句话说，没有需要唤醒的线程；signal != 0，则表示有一个或者多个线程需要唤醒，则唤醒一个线程。（如果线程有优先级，则唤醒优先级最高的线程，否则，随机唤醒一个线程。）
+    long signal = dispatch_semaphore_signal(lock);
+}
 
 
 

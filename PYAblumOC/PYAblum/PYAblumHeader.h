@@ -13,7 +13,7 @@
 #import "PYAblum.h"
 #import "PYAssetList_CollectionViewCell.h"
 #import "PYCamera.h"
-
+#import "UIImage+zip.h"
 
 @interface PYAblumHeader : NSObject
 

@@ -152,6 +152,8 @@
 
 ///删除 缓存的缩略图 及预览图
 - (void)removeCache;
-
+    
+/// 插入一个 model，
+- (void) insertAllPhotoAblumModelArray: (NSInteger) index andModel: (PYAssetModel *)model;
 @end
 

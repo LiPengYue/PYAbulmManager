@@ -8,25 +8,47 @@
 #import "PYAblum.h"
 #import <UIKit/UIKit.h>
 #import "PYAssetListViewConfiguration.h"
+#import "PYAssetList_CollectionViewCell.h"
 
-@protocol PYAssetListViewEventHandle <NSObject>
+@protocol PYAssetListViewProtocol <NSObject>
+
 
 /**
- * 事件的传递方法
- * 获取cell中 回调回来的数据，用key来区分具体是哪个event
- * 如果实现了这个方法，要手动对 选择的asset进行处理
- * 直接赋值这段代码，到你重写的方法中
- ```
- if ([key isEqualToString:PYAssetListCell_ClickSelectedButton]) {
- [PYAblum getSelectAssetArrayWithClickedModel:model andMaxCount:最大可选数 andOverTopBlock:^(NSArray<PYAssetModel *> *modelArray, BOOL isVoerTop) {
-    //...做你想做的事情
- }];
- [(PYAssetListView实例) reloadData];
- }
- ```
+ 设置 cell会在数据源中调用此方法
+
+ @param collectionView collectionView
+ @param cell 当前index的cell
+ @param index index
+ */
+- (void) setupCell: (UICollectionView *)collectionView
+          andIndex: (NSIndexPath *) index
+           andCell: (UICollectionViewCell *)cell;
+
+
+
+/**
+ 选中了button
  */
 @required
-- (void)eventFunc:(PYAssetModel *)model andKey: (NSString*) key andInfo:(id)info;
+- (void)clickRightButtonWithSelectedModel: (PYAssetModel *)model
+                    andSelectedModelArray: (NSArray <PYAssetModel *>*)modelArray
+             andIsOverTopMaxSelectedCount: (BOOL) isOverTop;
+
+
+/**
+ 最多能选中多少个model 默认为
+ */
+@required
+- (NSInteger)maxSelectedCount;
+
+
+/**
+ * 点击了imageView
+ */
+@required
+- (void)clickImageViewWithClickModel: (PYAssetModel *)model andModelArray: (NSArray<PYAssetModel*>*) modelArray andSelectedIndex: (NSInteger)index
+                             andCell: (PYAssetList_CollectionViewCell *)cell;
+
 @end
 
 
@@ -44,9 +66,10 @@
 @property (nonatomic,strong) PYAssetListViewConfiguration *configuration;
 
 /**
- * 事件处理者
+ * assetListViewDelegate
  */
-@property (nonatomic,weak) id <PYAssetListViewEventHandle> eventHandlerel;
+@property (nonatomic,weak) id <PYAssetListViewProtocol> assetListViewDelegate;
+@property (nonatomic,readonly) UICollectionView *assetCollectionView;
 
 /**
  * reloadData
@@ -58,8 +81,7 @@
 + (instancetype) AssetListView: (PYAssetListViewConfiguration *)configuration;
 
 ///是否可以打开相册
-+ (BOOL) isOpenPhotoAlbum;
-
++ (BOOL) isOpenPhotoAlbum: (void(^)(BOOL isOpen))openBlock;
 ///是否可以打开照相机
 + (BOOL) isOpenCamera;
 @end

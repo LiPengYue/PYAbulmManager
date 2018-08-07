@@ -11,7 +11,6 @@
 /// 配置资源列表页 相关数据 ，如果不传，那么会有默认配置
 @interface PYAssetListViewConfiguration : NSObject
 
-
 /**
  * 默认为 PYAssetModel
  * 这个属性关系到你的collectionViewCell中 接受到哪种Model
@@ -28,6 +27,17 @@
  * (一定要继承自 PYAssetList_CollectionViewCell)
  */
 @property (nonatomic,strong) Class cellClass;
+
+
+/**
+ * 第一个cell的class
+ */
+@property (nonatomic,strong) Class firstCellClass;
+
+/**
+ * 最后个cell的class
+ */
+@property (nonatomic,strong) Class lastCellClass;
 
 /**
  * collectionView 的delegate
@@ -57,5 +67,6 @@
  * 默认8张
  */
 @property (nonatomic,assign) NSInteger maxAssetSelectedCount;
+
 @end
 
