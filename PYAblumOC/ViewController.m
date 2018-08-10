@@ -61,10 +61,9 @@ typedef enum {
         configuration.imageWidth = 400;
         configuration.selectedImageWidth = 600;
         configuration.maxAssetSelectedCount = 8;
-        
         _assetView = [[PYAssetListView alloc] initWithFrame:self.view.bounds andConfiguration:configuration];
         _assetView.assetListViewDelegate = self;
-
+        
     }
     return _assetView;
 }
@@ -79,6 +78,7 @@ typedef enum {
     configuration.selectedImageViewWindowFrame = [window convertRect:cell.imageView.frame fromView:cell];
     configuration.defaultSelectedImage = cell.imageView.image;
     configuration.defaultSelectedIndex = index;
+    
     configuration.selectedImageViewContentMode = cell.imageView.contentMode;
     PYImageBrowserViewController *VC = [PYImageBrowserViewController createWihtConfig:configuration];
     VC.delegate = self;
@@ -123,7 +123,7 @@ typedef enum {
         if (!assetModel.delicateImage) {
             [assetModel getDelicateImageWidth:300 andBlock:^(UIImage *image) {
                 cell.imageBrowserImageView.image = image;
-            }]; 
+            }];
         }
         cell.imageBrowserImageView.image = image;
     }
