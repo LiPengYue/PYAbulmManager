@@ -35,10 +35,10 @@
     }
 }
 
-- (void)getDelicateImage: (void(^)(UIImage *image))block {
+- (void)getDelicateImageWidth: (CGFloat)imageW andBlock:(void(^)(UIImage *image))block {
     if (!block) return;
     
-    [[PYAblum defaultAblum].imageManager getPotoWithAsset:self.asset andSetPotoWidth:300 andnetworkAccessAllowed:false andCompletion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
+    [[PYAblum defaultAblum].imageManager getPotoWithAsset:self.asset andSetPotoWidth:imageW andnetworkAccessAllowed:false andCompletion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
         if (isDegraded) {
             self.degradedImage = photo;
         }else{

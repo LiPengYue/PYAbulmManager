@@ -7,9 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0321FCE1211327E1000CBCF6 /* PYImageBrowserViewControllerAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321FCE0211327E1000CBCF6 /* PYImageBrowserViewControllerAnimatedTransition.m */; };
-		0321FCE421133099000CBCF6 /* PYImageBrowserViewViewControllerAnimater.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321FCE321133099000CBCF6 /* PYImageBrowserViewViewControllerAnimater.m */; };
-		0321FCED2113446D000CBCF6 /* UIColor+GetRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321FCEC2113446D000CBCF6 /* UIColor+GetRGB.m */; };
+		033BCF35211DAFA5002558BF /* PYAssetListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCEFA211DAFA5002558BF /* PYAssetListView.m */; };
+		033BCF36211DAFA5002558BF /* PYAssetListViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCEFC211DAFA5002558BF /* PYAssetListViewConfiguration.m */; };
+		033BCF37211DAFA5002558BF /* PYAssetList_CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCEFD211DAFA5002558BF /* PYAssetList_CollectionViewCell.m */; };
+		033BCF38211DAFA5002558BF /* PYCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF01211DAFA5002558BF /* PYCamera.m */; };
+		033BCF39211DAFA5002558BF /* UIColor+GetRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF06211DAFA5002558BF /* UIColor+GetRGB.m */; };
+		033BCF3A211DAFA5002558BF /* PYImageBrowserViewViewControllerAnimater.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF0B211DAFA5002558BF /* PYImageBrowserViewViewControllerAnimater.m */; };
+		033BCF3B211DAFA5002558BF /* PYImageBrowserViewControllerAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF0C211DAFA5002558BF /* PYImageBrowserViewControllerAnimatedTransition.m */; };
+		033BCF3C211DAFA5002558BF /* PYImageBrowserViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF0D211DAFA5002558BF /* PYImageBrowserViewControllerConfiguration.m */; };
+		033BCF3D211DAFA5002558BF /* PYImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF0E211DAFA5002558BF /* PYImageBrowserViewController.m */; };
+		033BCF3E211DAFA5002558BF /* PYImageBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF10211DAFA5002558BF /* PYImageBrowserCollectionViewCell.m */; };
+		033BCF3F211DAFA5002558BF /* PYImageBrowserCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF13211DAFA5002558BF /* PYImageBrowserCollectionViewFlowLayout.m */; };
+		033BCF40211DAFA5002558BF /* PYImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF14211DAFA5002558BF /* PYImageBrowserView.m */; };
+		033BCF41211DAFA5002558BF /* PYImageBrowserScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF17211DAFA5002558BF /* PYImageBrowserScrollView.m */; };
+		033BCF42211DAFA5002558BF /* RunloopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF1C211DAFA5002558BF /* RunloopManager.m */; };
+		033BCF43211DAFA5002558BF /* PYAblum.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF20211DAFA5002558BF /* PYAblum.m */; };
+		033BCF44211DAFA5002558BF /* PYAblumManagerCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF21211DAFA5002558BF /* PYAblumManagerCommon.m */; };
+		033BCF45211DAFA5002558BF /* UIImage+zip.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF25211DAFA5002558BF /* UIImage+zip.m */; };
+		033BCF46211DAFA5002558BF /* UITableView+PYAblumScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF26211DAFA5002558BF /* UITableView+PYAblumScroll.m */; };
+		033BCF47211DAFA5002558BF /* PYAblumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF28211DAFA5002558BF /* PYAblumModel.m */; };
+		033BCF48211DAFA5002558BF /* PYAblumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF2A211DAFA5002558BF /* PYAblumManager.m */; };
+		033BCF49211DAFA5002558BF /* PYAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF2E211DAFA5002558BF /* PYAssetManager.m */; };
+		033BCF4A211DAFA5002558BF /* PYAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF30211DAFA5002558BF /* PYAssetModel.m */; };
+		033BCF4B211DAFA5002558BF /* PYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF33211DAFA5002558BF /* PYImageManager.m */; };
+		033BCF4C211DAFA5002558BF /* PYAblumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 033BCF34211DAFA5002558BF /* PYAblumHeader.m */; };
 		03A8665920EE1A0C00112211 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A8665820EE1A0C00112211 /* AppDelegate.m */; };
 		03A8665C20EE1A0C00112211 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A8665B20EE1A0C00112211 /* ViewController.m */; };
 		03A8665F20EE1A0C00112211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A8665D20EE1A0C00112211 /* Main.storyboard */; };
@@ -19,67 +40,6 @@
 		03A8667120EE1A0D00112211 /* PYAblumOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A8667020EE1A0D00112211 /* PYAblumOCTests.m */; };
 		03A8667C20EE1A0D00112211 /* PYAblumOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A8667B20EE1A0D00112211 /* PYAblumOCUITests.m */; };
 		03CC87E821118F3900957274 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CC87E721118F3900957274 /* Images.xcassets */; };
-		03CC89452112E70900957274 /* PYAssetListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89152112E70900957274 /* PYAssetListView.m */; };
-		03CC89462112E70900957274 /* PYAssetListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89152112E70900957274 /* PYAssetListView.m */; };
-		03CC89472112E70900957274 /* PYAssetListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89152112E70900957274 /* PYAssetListView.m */; };
-		03CC89482112E70900957274 /* PYAssetListViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89172112E70900957274 /* PYAssetListViewConfiguration.m */; };
-		03CC89492112E70900957274 /* PYAssetListViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89172112E70900957274 /* PYAssetListViewConfiguration.m */; };
-		03CC894A2112E70900957274 /* PYAssetListViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89172112E70900957274 /* PYAssetListViewConfiguration.m */; };
-		03CC894B2112E70900957274 /* PYAssetList_CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89182112E70900957274 /* PYAssetList_CollectionViewCell.m */; };
-		03CC894C2112E70900957274 /* PYAssetList_CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89182112E70900957274 /* PYAssetList_CollectionViewCell.m */; };
-		03CC894D2112E70900957274 /* PYAssetList_CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89182112E70900957274 /* PYAssetList_CollectionViewCell.m */; };
-		03CC894E2112E70900957274 /* PYCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC891C2112E70900957274 /* PYCamera.m */; };
-		03CC894F2112E70900957274 /* PYCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC891C2112E70900957274 /* PYCamera.m */; };
-		03CC89502112E70900957274 /* PYCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC891C2112E70900957274 /* PYCamera.m */; };
-		03CC89512112E70900957274 /* PYImageBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC891E2112E70900957274 /* PYImageBrowserCollectionViewCell.m */; };
-		03CC89522112E70900957274 /* PYImageBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC891E2112E70900957274 /* PYImageBrowserCollectionViewCell.m */; };
-		03CC89532112E70900957274 /* PYImageBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC891E2112E70900957274 /* PYImageBrowserCollectionViewCell.m */; };
-		03CC89542112E70900957274 /* PYImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89202112E70900957274 /* PYImageBrowserViewController.m */; };
-		03CC89552112E70900957274 /* PYImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89202112E70900957274 /* PYImageBrowserViewController.m */; };
-		03CC89562112E70900957274 /* PYImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89202112E70900957274 /* PYImageBrowserViewController.m */; };
-		03CC89572112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89222112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m */; };
-		03CC89582112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89222112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m */; };
-		03CC89592112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89222112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m */; };
-		03CC895A2112E70900957274 /* PYImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89232112E70900957274 /* PYImageBrowserView.m */; };
-		03CC895B2112E70900957274 /* PYImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89232112E70900957274 /* PYImageBrowserView.m */; };
-		03CC895C2112E70900957274 /* PYImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89232112E70900957274 /* PYImageBrowserView.m */; };
-		03CC895D2112E70900957274 /* PYImageBrowserScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89272112E70900957274 /* PYImageBrowserScrollView.m */; };
-		03CC895E2112E70900957274 /* PYImageBrowserScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89272112E70900957274 /* PYImageBrowserScrollView.m */; };
-		03CC895F2112E70900957274 /* PYImageBrowserScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89272112E70900957274 /* PYImageBrowserScrollView.m */; };
-		03CC89602112E70900957274 /* RunloopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC892C2112E70900957274 /* RunloopManager.m */; };
-		03CC89612112E70900957274 /* RunloopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC892C2112E70900957274 /* RunloopManager.m */; };
-		03CC89622112E70900957274 /* RunloopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC892C2112E70900957274 /* RunloopManager.m */; };
-		03CC89632112E70900957274 /* PYAblum.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89302112E70900957274 /* PYAblum.m */; };
-		03CC89642112E70900957274 /* PYAblum.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89302112E70900957274 /* PYAblum.m */; };
-		03CC89652112E70900957274 /* PYAblum.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89302112E70900957274 /* PYAblum.m */; };
-		03CC89662112E70900957274 /* PYAblumManagerCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89312112E70900957274 /* PYAblumManagerCommon.m */; };
-		03CC89672112E70900957274 /* PYAblumManagerCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89312112E70900957274 /* PYAblumManagerCommon.m */; };
-		03CC89682112E70900957274 /* PYAblumManagerCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89312112E70900957274 /* PYAblumManagerCommon.m */; };
-		03CC89692112E70900957274 /* UIImage+zip.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89352112E70900957274 /* UIImage+zip.m */; };
-		03CC896A2112E70900957274 /* UIImage+zip.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89352112E70900957274 /* UIImage+zip.m */; };
-		03CC896B2112E70900957274 /* UIImage+zip.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89352112E70900957274 /* UIImage+zip.m */; };
-		03CC896C2112E70900957274 /* UITableView+PYAblumScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89362112E70900957274 /* UITableView+PYAblumScroll.m */; };
-		03CC896D2112E70900957274 /* UITableView+PYAblumScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89362112E70900957274 /* UITableView+PYAblumScroll.m */; };
-		03CC896E2112E70900957274 /* UITableView+PYAblumScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89362112E70900957274 /* UITableView+PYAblumScroll.m */; };
-		03CC896F2112E70900957274 /* PYAblumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89382112E70900957274 /* PYAblumModel.m */; };
-		03CC89702112E70900957274 /* PYAblumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89382112E70900957274 /* PYAblumModel.m */; };
-		03CC89712112E70900957274 /* PYAblumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89382112E70900957274 /* PYAblumModel.m */; };
-		03CC89722112E70900957274 /* PYAblumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC893A2112E70900957274 /* PYAblumManager.m */; };
-		03CC89732112E70900957274 /* PYAblumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC893A2112E70900957274 /* PYAblumManager.m */; };
-		03CC89742112E70900957274 /* PYAblumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC893A2112E70900957274 /* PYAblumManager.m */; };
-		03CC89752112E70900957274 /* PYAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC893E2112E70900957274 /* PYAssetManager.m */; };
-		03CC89762112E70900957274 /* PYAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC893E2112E70900957274 /* PYAssetManager.m */; };
-		03CC89772112E70900957274 /* PYAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC893E2112E70900957274 /* PYAssetManager.m */; };
-		03CC89782112E70900957274 /* PYAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89402112E70900957274 /* PYAssetModel.m */; };
-		03CC89792112E70900957274 /* PYAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89402112E70900957274 /* PYAssetModel.m */; };
-		03CC897A2112E70900957274 /* PYAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89402112E70900957274 /* PYAssetModel.m */; };
-		03CC897B2112E70900957274 /* PYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89432112E70900957274 /* PYImageManager.m */; };
-		03CC897C2112E70900957274 /* PYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89432112E70900957274 /* PYImageManager.m */; };
-		03CC897D2112E70900957274 /* PYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89432112E70900957274 /* PYImageManager.m */; };
-		03CC897E2112E70900957274 /* PYAblumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89442112E70900957274 /* PYAblumHeader.m */; };
-		03CC897F2112E70900957274 /* PYAblumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89442112E70900957274 /* PYAblumHeader.m */; };
-		03CC89802112E70900957274 /* PYAblumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CC89442112E70900957274 /* PYAblumHeader.m */; };
-		03FD9E4A211889B100B0FB51 /* PYImageBrowserViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD9E49211889B100B0FB51 /* PYImageBrowserViewControllerConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,12 +60,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0321FCDF211327E1000CBCF6 /* PYImageBrowserViewControllerAnimatedTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewControllerAnimatedTransition.h; sourceTree = "<group>"; };
-		0321FCE0211327E1000CBCF6 /* PYImageBrowserViewControllerAnimatedTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewControllerAnimatedTransition.m; sourceTree = "<group>"; };
-		0321FCE221133099000CBCF6 /* PYImageBrowserViewViewControllerAnimater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewViewControllerAnimater.h; sourceTree = "<group>"; };
-		0321FCE321133099000CBCF6 /* PYImageBrowserViewViewControllerAnimater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewViewControllerAnimater.m; sourceTree = "<group>"; };
-		0321FCEB2113446D000CBCF6 /* UIColor+GetRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetRGB.h"; sourceTree = "<group>"; };
-		0321FCEC2113446D000CBCF6 /* UIColor+GetRGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GetRGB.m"; sourceTree = "<group>"; };
+		033BCEF9211DAFA5002558BF /* PYAssetListViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetListViewConfiguration.h; sourceTree = "<group>"; };
+		033BCEFA211DAFA5002558BF /* PYAssetListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetListView.m; sourceTree = "<group>"; };
+		033BCEFB211DAFA5002558BF /* PYAssetList_CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetList_CollectionViewCell.h; sourceTree = "<group>"; };
+		033BCEFC211DAFA5002558BF /* PYAssetListViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetListViewConfiguration.m; sourceTree = "<group>"; };
+		033BCEFD211DAFA5002558BF /* PYAssetList_CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetList_CollectionViewCell.m; sourceTree = "<group>"; };
+		033BCEFE211DAFA5002558BF /* PYAssetListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetListView.h; sourceTree = "<group>"; };
+		033BCF00211DAFA5002558BF /* PYCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCamera.h; sourceTree = "<group>"; };
+		033BCF01211DAFA5002558BF /* PYCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCamera.m; sourceTree = "<group>"; };
+		033BCF03211DAFA5002558BF /* PYImageBrowserViewControllerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewControllerConfiguration.h; sourceTree = "<group>"; };
+		033BCF04211DAFA5002558BF /* PYImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewController.h; sourceTree = "<group>"; };
+		033BCF06211DAFA5002558BF /* UIColor+GetRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GetRGB.m"; sourceTree = "<group>"; };
+		033BCF07211DAFA5002558BF /* UIColor+GetRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetRGB.h"; sourceTree = "<group>"; };
+		033BCF09211DAFA5002558BF /* PYImageBrowserViewViewControllerAnimater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewViewControllerAnimater.h; sourceTree = "<group>"; };
+		033BCF0A211DAFA5002558BF /* PYImageBrowserViewControllerAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewControllerAnimatedTransition.h; sourceTree = "<group>"; };
+		033BCF0B211DAFA5002558BF /* PYImageBrowserViewViewControllerAnimater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewViewControllerAnimater.m; sourceTree = "<group>"; };
+		033BCF0C211DAFA5002558BF /* PYImageBrowserViewControllerAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewControllerAnimatedTransition.m; sourceTree = "<group>"; };
+		033BCF0D211DAFA5002558BF /* PYImageBrowserViewControllerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewControllerConfiguration.m; sourceTree = "<group>"; };
+		033BCF0E211DAFA5002558BF /* PYImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewController.m; sourceTree = "<group>"; };
+		033BCF10211DAFA5002558BF /* PYImageBrowserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserCollectionViewCell.m; sourceTree = "<group>"; };
+		033BCF11211DAFA5002558BF /* PYImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserView.h; sourceTree = "<group>"; };
+		033BCF12211DAFA5002558BF /* PYImageBrowserScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserScrollView.h; sourceTree = "<group>"; };
+		033BCF13211DAFA5002558BF /* PYImageBrowserCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		033BCF14211DAFA5002558BF /* PYImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserView.m; sourceTree = "<group>"; };
+		033BCF15211DAFA5002558BF /* PYImageBrowserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserCollectionViewCell.h; sourceTree = "<group>"; };
+		033BCF16211DAFA5002558BF /* PYImageBrowserCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		033BCF17211DAFA5002558BF /* PYImageBrowserScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserScrollView.m; sourceTree = "<group>"; };
+		033BCF18211DAFA5002558BF /* PYAblumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumHeader.h; sourceTree = "<group>"; };
+		033BCF1B211DAFA5002558BF /* RunloopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopManager.h; sourceTree = "<group>"; };
+		033BCF1C211DAFA5002558BF /* RunloopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopManager.m; sourceTree = "<group>"; };
+		033BCF1E211DAFA5002558BF /* PYAblumManagerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumManagerCommon.h; sourceTree = "<group>"; };
+		033BCF1F211DAFA5002558BF /* PYAblum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblum.h; sourceTree = "<group>"; };
+		033BCF20211DAFA5002558BF /* PYAblum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblum.m; sourceTree = "<group>"; };
+		033BCF21211DAFA5002558BF /* PYAblumManagerCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumManagerCommon.m; sourceTree = "<group>"; };
+		033BCF23211DAFA5002558BF /* UIImage+zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+zip.h"; sourceTree = "<group>"; };
+		033BCF24211DAFA5002558BF /* UITableView+PYAblumScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PYAblumScroll.h"; sourceTree = "<group>"; };
+		033BCF25211DAFA5002558BF /* UIImage+zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+zip.m"; sourceTree = "<group>"; };
+		033BCF26211DAFA5002558BF /* UITableView+PYAblumScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PYAblumScroll.m"; sourceTree = "<group>"; };
+		033BCF28211DAFA5002558BF /* PYAblumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumModel.m; sourceTree = "<group>"; };
+		033BCF29211DAFA5002558BF /* PYAblumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumManager.h; sourceTree = "<group>"; };
+		033BCF2A211DAFA5002558BF /* PYAblumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumManager.m; sourceTree = "<group>"; };
+		033BCF2B211DAFA5002558BF /* PYAblumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumModel.h; sourceTree = "<group>"; };
+		033BCF2D211DAFA5002558BF /* PYAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetModel.h; sourceTree = "<group>"; };
+		033BCF2E211DAFA5002558BF /* PYAssetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetManager.m; sourceTree = "<group>"; };
+		033BCF2F211DAFA5002558BF /* PYAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetManager.h; sourceTree = "<group>"; };
+		033BCF30211DAFA5002558BF /* PYAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetModel.m; sourceTree = "<group>"; };
+		033BCF32211DAFA5002558BF /* PYImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageManager.h; sourceTree = "<group>"; };
+		033BCF33211DAFA5002558BF /* PYImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageManager.m; sourceTree = "<group>"; };
+		033BCF34211DAFA5002558BF /* PYAblumHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumHeader.m; sourceTree = "<group>"; };
 		03A8665420EE1A0C00112211 /* PYAblumOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PYAblumOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A8665720EE1A0C00112211 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03A8665820EE1A0C00112211 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,48 +125,6 @@
 		03A8667B20EE1A0D00112211 /* PYAblumOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYAblumOCUITests.m; sourceTree = "<group>"; };
 		03A8667D20EE1A0D00112211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03CC87E721118F3900957274 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		03CC89142112E70900957274 /* PYAssetListViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetListViewConfiguration.h; sourceTree = "<group>"; };
-		03CC89152112E70900957274 /* PYAssetListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetListView.m; sourceTree = "<group>"; };
-		03CC89162112E70900957274 /* PYAssetList_CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetList_CollectionViewCell.h; sourceTree = "<group>"; };
-		03CC89172112E70900957274 /* PYAssetListViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetListViewConfiguration.m; sourceTree = "<group>"; };
-		03CC89182112E70900957274 /* PYAssetList_CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetList_CollectionViewCell.m; sourceTree = "<group>"; };
-		03CC89192112E70900957274 /* PYAssetListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetListView.h; sourceTree = "<group>"; };
-		03CC891B2112E70900957274 /* PYCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCamera.h; sourceTree = "<group>"; };
-		03CC891C2112E70900957274 /* PYCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCamera.m; sourceTree = "<group>"; };
-		03CC891E2112E70900957274 /* PYImageBrowserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserCollectionViewCell.m; sourceTree = "<group>"; };
-		03CC891F2112E70900957274 /* PYImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserView.h; sourceTree = "<group>"; };
-		03CC89202112E70900957274 /* PYImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewController.m; sourceTree = "<group>"; };
-		03CC89212112E70900957274 /* PYImageBrowserScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserScrollView.h; sourceTree = "<group>"; };
-		03CC89222112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserCollectionViewFlowLayout.m; sourceTree = "<group>"; };
-		03CC89232112E70900957274 /* PYImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserView.m; sourceTree = "<group>"; };
-		03CC89242112E70900957274 /* PYImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewController.h; sourceTree = "<group>"; };
-		03CC89252112E70900957274 /* PYImageBrowserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserCollectionViewCell.h; sourceTree = "<group>"; };
-		03CC89262112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		03CC89272112E70900957274 /* PYImageBrowserScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserScrollView.m; sourceTree = "<group>"; };
-		03CC89282112E70900957274 /* PYAblumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumHeader.h; sourceTree = "<group>"; };
-		03CC892B2112E70900957274 /* RunloopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopManager.h; sourceTree = "<group>"; };
-		03CC892C2112E70900957274 /* RunloopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopManager.m; sourceTree = "<group>"; };
-		03CC892E2112E70900957274 /* PYAblumManagerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumManagerCommon.h; sourceTree = "<group>"; };
-		03CC892F2112E70900957274 /* PYAblum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblum.h; sourceTree = "<group>"; };
-		03CC89302112E70900957274 /* PYAblum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblum.m; sourceTree = "<group>"; };
-		03CC89312112E70900957274 /* PYAblumManagerCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumManagerCommon.m; sourceTree = "<group>"; };
-		03CC89332112E70900957274 /* UIImage+zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+zip.h"; sourceTree = "<group>"; };
-		03CC89342112E70900957274 /* UITableView+PYAblumScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PYAblumScroll.h"; sourceTree = "<group>"; };
-		03CC89352112E70900957274 /* UIImage+zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+zip.m"; sourceTree = "<group>"; };
-		03CC89362112E70900957274 /* UITableView+PYAblumScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PYAblumScroll.m"; sourceTree = "<group>"; };
-		03CC89382112E70900957274 /* PYAblumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumModel.m; sourceTree = "<group>"; };
-		03CC89392112E70900957274 /* PYAblumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumManager.h; sourceTree = "<group>"; };
-		03CC893A2112E70900957274 /* PYAblumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumManager.m; sourceTree = "<group>"; };
-		03CC893B2112E70900957274 /* PYAblumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAblumModel.h; sourceTree = "<group>"; };
-		03CC893D2112E70900957274 /* PYAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetModel.h; sourceTree = "<group>"; };
-		03CC893E2112E70900957274 /* PYAssetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetManager.m; sourceTree = "<group>"; };
-		03CC893F2112E70900957274 /* PYAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAssetManager.h; sourceTree = "<group>"; };
-		03CC89402112E70900957274 /* PYAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAssetModel.m; sourceTree = "<group>"; };
-		03CC89422112E70900957274 /* PYImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageManager.h; sourceTree = "<group>"; };
-		03CC89432112E70900957274 /* PYImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageManager.m; sourceTree = "<group>"; };
-		03CC89442112E70900957274 /* PYAblumHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAblumHeader.m; sourceTree = "<group>"; };
-		03FD9E48211889B100B0FB51 /* PYImageBrowserViewControllerConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYImageBrowserViewControllerConfiguration.h; sourceTree = "<group>"; };
-		03FD9E49211889B100B0FB51 /* PYImageBrowserViewControllerConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYImageBrowserViewControllerConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,24 +152,171 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0321FCE5211330C4000CBCF6 /* Animater */ = {
+		033BCEF6211DAFA5002558BF /* PYAblum */ = {
 			isa = PBXGroup;
 			children = (
-				0321FCE221133099000CBCF6 /* PYImageBrowserViewViewControllerAnimater.h */,
-				0321FCE321133099000CBCF6 /* PYImageBrowserViewViewControllerAnimater.m */,
-				0321FCDF211327E1000CBCF6 /* PYImageBrowserViewControllerAnimatedTransition.h */,
-				0321FCE0211327E1000CBCF6 /* PYImageBrowserViewControllerAnimatedTransition.m */,
+				033BCEF7211DAFA5002558BF /* PYAblumUI */,
+				033BCF18211DAFA5002558BF /* PYAblumHeader.h */,
+				033BCF19211DAFA5002558BF /* PYAblum(相册管理工具) */,
+				033BCF34211DAFA5002558BF /* PYAblumHeader.m */,
+			);
+			path = PYAblum;
+			sourceTree = "<group>";
+		};
+		033BCEF7211DAFA5002558BF /* PYAblumUI */ = {
+			isa = PBXGroup;
+			children = (
+				033BCEF8211DAFA5002558BF /* PYAblumPhotoList */,
+				033BCEFF211DAFA5002558BF /* PYCamera */,
+				033BCF02211DAFA5002558BF /* PYPreviewView */,
+			);
+			path = PYAblumUI;
+			sourceTree = "<group>";
+		};
+		033BCEF8211DAFA5002558BF /* PYAblumPhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				033BCEF9211DAFA5002558BF /* PYAssetListViewConfiguration.h */,
+				033BCEFA211DAFA5002558BF /* PYAssetListView.m */,
+				033BCEFB211DAFA5002558BF /* PYAssetList_CollectionViewCell.h */,
+				033BCEFC211DAFA5002558BF /* PYAssetListViewConfiguration.m */,
+				033BCEFD211DAFA5002558BF /* PYAssetList_CollectionViewCell.m */,
+				033BCEFE211DAFA5002558BF /* PYAssetListView.h */,
+			);
+			path = PYAblumPhotoList;
+			sourceTree = "<group>";
+		};
+		033BCEFF211DAFA5002558BF /* PYCamera */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF00211DAFA5002558BF /* PYCamera.h */,
+				033BCF01211DAFA5002558BF /* PYCamera.m */,
+			);
+			path = PYCamera;
+			sourceTree = "<group>";
+		};
+		033BCF02211DAFA5002558BF /* PYPreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF03211DAFA5002558BF /* PYImageBrowserViewControllerConfiguration.h */,
+				033BCF04211DAFA5002558BF /* PYImageBrowserViewController.h */,
+				033BCF05211DAFA5002558BF /* UIColor+GetRGB */,
+				033BCF08211DAFA5002558BF /* Animater */,
+				033BCF0D211DAFA5002558BF /* PYImageBrowserViewControllerConfiguration.m */,
+				033BCF0E211DAFA5002558BF /* PYImageBrowserViewController.m */,
+				033BCF0F211DAFA5002558BF /* Views */,
+			);
+			path = PYPreviewView;
+			sourceTree = "<group>";
+		};
+		033BCF05211DAFA5002558BF /* UIColor+GetRGB */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF06211DAFA5002558BF /* UIColor+GetRGB.m */,
+				033BCF07211DAFA5002558BF /* UIColor+GetRGB.h */,
+			);
+			path = "UIColor+GetRGB";
+			sourceTree = "<group>";
+		};
+		033BCF08211DAFA5002558BF /* Animater */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF09211DAFA5002558BF /* PYImageBrowserViewViewControllerAnimater.h */,
+				033BCF0A211DAFA5002558BF /* PYImageBrowserViewControllerAnimatedTransition.h */,
+				033BCF0B211DAFA5002558BF /* PYImageBrowserViewViewControllerAnimater.m */,
+				033BCF0C211DAFA5002558BF /* PYImageBrowserViewControllerAnimatedTransition.m */,
 			);
 			path = Animater;
 			sourceTree = "<group>";
 		};
-		0321FCE621133A45000CBCF6 /* UIColor+GetRGB */ = {
+		033BCF0F211DAFA5002558BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0321FCEB2113446D000CBCF6 /* UIColor+GetRGB.h */,
-				0321FCEC2113446D000CBCF6 /* UIColor+GetRGB.m */,
+				033BCF10211DAFA5002558BF /* PYImageBrowserCollectionViewCell.m */,
+				033BCF11211DAFA5002558BF /* PYImageBrowserView.h */,
+				033BCF12211DAFA5002558BF /* PYImageBrowserScrollView.h */,
+				033BCF13211DAFA5002558BF /* PYImageBrowserCollectionViewFlowLayout.m */,
+				033BCF14211DAFA5002558BF /* PYImageBrowserView.m */,
+				033BCF15211DAFA5002558BF /* PYImageBrowserCollectionViewCell.h */,
+				033BCF16211DAFA5002558BF /* PYImageBrowserCollectionViewFlowLayout.h */,
+				033BCF17211DAFA5002558BF /* PYImageBrowserScrollView.m */,
 			);
-			path = "UIColor+GetRGB";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		033BCF19211DAFA5002558BF /* PYAblum(相册管理工具) */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF1A211DAFA5002558BF /* RunLoop */,
+				033BCF1D211DAFA5002558BF /* PYPhotoAblumManager */,
+			);
+			path = "PYAblum(相册管理工具)";
+			sourceTree = "<group>";
+		};
+		033BCF1A211DAFA5002558BF /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF1B211DAFA5002558BF /* RunloopManager.h */,
+				033BCF1C211DAFA5002558BF /* RunloopManager.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		033BCF1D211DAFA5002558BF /* PYPhotoAblumManager */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF1E211DAFA5002558BF /* PYAblumManagerCommon.h */,
+				033BCF1F211DAFA5002558BF /* PYAblum.h */,
+				033BCF20211DAFA5002558BF /* PYAblum.m */,
+				033BCF21211DAFA5002558BF /* PYAblumManagerCommon.m */,
+				033BCF22211DAFA5002558BF /* PYExtension */,
+				033BCF27211DAFA5002558BF /* PYAblumManager */,
+				033BCF2C211DAFA5002558BF /* PYAssesManager */,
+				033BCF31211DAFA5002558BF /* PYImageManager */,
+			);
+			path = PYPhotoAblumManager;
+			sourceTree = "<group>";
+		};
+		033BCF22211DAFA5002558BF /* PYExtension */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF23211DAFA5002558BF /* UIImage+zip.h */,
+				033BCF24211DAFA5002558BF /* UITableView+PYAblumScroll.h */,
+				033BCF25211DAFA5002558BF /* UIImage+zip.m */,
+				033BCF26211DAFA5002558BF /* UITableView+PYAblumScroll.m */,
+			);
+			path = PYExtension;
+			sourceTree = "<group>";
+		};
+		033BCF27211DAFA5002558BF /* PYAblumManager */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF28211DAFA5002558BF /* PYAblumModel.m */,
+				033BCF29211DAFA5002558BF /* PYAblumManager.h */,
+				033BCF2A211DAFA5002558BF /* PYAblumManager.m */,
+				033BCF2B211DAFA5002558BF /* PYAblumModel.h */,
+			);
+			path = PYAblumManager;
+			sourceTree = "<group>";
+		};
+		033BCF2C211DAFA5002558BF /* PYAssesManager */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF2D211DAFA5002558BF /* PYAssetModel.h */,
+				033BCF2E211DAFA5002558BF /* PYAssetManager.m */,
+				033BCF2F211DAFA5002558BF /* PYAssetManager.h */,
+				033BCF30211DAFA5002558BF /* PYAssetModel.m */,
+			);
+			path = PYAssesManager;
+			sourceTree = "<group>";
+		};
+		033BCF31211DAFA5002558BF /* PYImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				033BCF32211DAFA5002558BF /* PYImageManager.h */,
+				033BCF33211DAFA5002558BF /* PYImageManager.m */,
+			);
+			path = PYImageManager;
 			sourceTree = "<group>";
 		};
 		03A8664B20EE1A0C00112211 = {
@@ -235,7 +342,7 @@
 		03A8665620EE1A0C00112211 /* PYAblumOC */ = {
 			isa = PBXGroup;
 			children = (
-				03CC89112112E70900957274 /* PYAblum */,
+				033BCEF6211DAFA5002558BF /* PYAblum */,
 				03A8665720EE1A0C00112211 /* AppDelegate.h */,
 				03A8665820EE1A0C00112211 /* AppDelegate.m */,
 				03A8665A20EE1A0C00112211 /* ViewController.h */,
@@ -266,145 +373,6 @@
 				03A8667D20EE1A0D00112211 /* Info.plist */,
 			);
 			path = PYAblumOCUITests;
-			sourceTree = "<group>";
-		};
-		03CC89112112E70900957274 /* PYAblum */ = {
-			isa = PBXGroup;
-			children = (
-				03CC89282112E70900957274 /* PYAblumHeader.h */,
-				03CC89122112E70900957274 /* PYAblumUI */,
-				03CC89292112E70900957274 /* PYAblum(相册管理工具) */,
-				03CC89442112E70900957274 /* PYAblumHeader.m */,
-			);
-			path = PYAblum;
-			sourceTree = "<group>";
-		};
-		03CC89122112E70900957274 /* PYAblumUI */ = {
-			isa = PBXGroup;
-			children = (
-				03CC89132112E70900957274 /* PYAblumPhotoList */,
-				03CC891A2112E70900957274 /* PYCamera */,
-				03CC891D2112E70900957274 /* PYPreviewView */,
-			);
-			path = PYAblumUI;
-			sourceTree = "<group>";
-		};
-		03CC89132112E70900957274 /* PYAblumPhotoList */ = {
-			isa = PBXGroup;
-			children = (
-				03CC89142112E70900957274 /* PYAssetListViewConfiguration.h */,
-				03CC89192112E70900957274 /* PYAssetListView.h */,
-				03CC89152112E70900957274 /* PYAssetListView.m */,
-				03CC89162112E70900957274 /* PYAssetList_CollectionViewCell.h */,
-				03CC89172112E70900957274 /* PYAssetListViewConfiguration.m */,
-				03CC89182112E70900957274 /* PYAssetList_CollectionViewCell.m */,
-			);
-			path = PYAblumPhotoList;
-			sourceTree = "<group>";
-		};
-		03CC891A2112E70900957274 /* PYCamera */ = {
-			isa = PBXGroup;
-			children = (
-				03CC891B2112E70900957274 /* PYCamera.h */,
-				03CC891C2112E70900957274 /* PYCamera.m */,
-			);
-			path = PYCamera;
-			sourceTree = "<group>";
-		};
-		03CC891D2112E70900957274 /* PYPreviewView */ = {
-			isa = PBXGroup;
-			children = (
-				0321FCE621133A45000CBCF6 /* UIColor+GetRGB */,
-				0321FCE5211330C4000CBCF6 /* Animater */,
-				03CC89242112E70900957274 /* PYImageBrowserViewController.h */,
-				03CC89202112E70900957274 /* PYImageBrowserViewController.m */,
-				03FD9E48211889B100B0FB51 /* PYImageBrowserViewControllerConfiguration.h */,
-				03FD9E49211889B100B0FB51 /* PYImageBrowserViewControllerConfiguration.m */,
-				03CC891F2112E70900957274 /* PYImageBrowserView.h */,
-				03CC89232112E70900957274 /* PYImageBrowserView.m */,
-				03CC89252112E70900957274 /* PYImageBrowserCollectionViewCell.h */,
-				03CC891E2112E70900957274 /* PYImageBrowserCollectionViewCell.m */,
-				03CC89212112E70900957274 /* PYImageBrowserScrollView.h */,
-				03CC89272112E70900957274 /* PYImageBrowserScrollView.m */,
-				03CC89262112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.h */,
-				03CC89222112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m */,
-			);
-			path = PYPreviewView;
-			sourceTree = "<group>";
-		};
-		03CC89292112E70900957274 /* PYAblum(相册管理工具) */ = {
-			isa = PBXGroup;
-			children = (
-				03CC892A2112E70900957274 /* RunLoop */,
-				03CC892D2112E70900957274 /* PYPhotoAblumManager */,
-			);
-			path = "PYAblum(相册管理工具)";
-			sourceTree = "<group>";
-		};
-		03CC892A2112E70900957274 /* RunLoop */ = {
-			isa = PBXGroup;
-			children = (
-				03CC892B2112E70900957274 /* RunloopManager.h */,
-				03CC892C2112E70900957274 /* RunloopManager.m */,
-			);
-			path = RunLoop;
-			sourceTree = "<group>";
-		};
-		03CC892D2112E70900957274 /* PYPhotoAblumManager */ = {
-			isa = PBXGroup;
-			children = (
-				03CC892E2112E70900957274 /* PYAblumManagerCommon.h */,
-				03CC89312112E70900957274 /* PYAblumManagerCommon.m */,
-				03CC892F2112E70900957274 /* PYAblum.h */,
-				03CC89302112E70900957274 /* PYAblum.m */,
-				03CC89322112E70900957274 /* PYExtension */,
-				03CC89372112E70900957274 /* PYAblumManager */,
-				03CC893C2112E70900957274 /* PYAssesManager */,
-				03CC89412112E70900957274 /* PYImageManager */,
-			);
-			path = PYPhotoAblumManager;
-			sourceTree = "<group>";
-		};
-		03CC89322112E70900957274 /* PYExtension */ = {
-			isa = PBXGroup;
-			children = (
-				03CC89332112E70900957274 /* UIImage+zip.h */,
-				03CC89352112E70900957274 /* UIImage+zip.m */,
-				03CC89342112E70900957274 /* UITableView+PYAblumScroll.h */,
-				03CC89362112E70900957274 /* UITableView+PYAblumScroll.m */,
-			);
-			path = PYExtension;
-			sourceTree = "<group>";
-		};
-		03CC89372112E70900957274 /* PYAblumManager */ = {
-			isa = PBXGroup;
-			children = (
-				03CC89382112E70900957274 /* PYAblumModel.m */,
-				03CC89392112E70900957274 /* PYAblumManager.h */,
-				03CC893A2112E70900957274 /* PYAblumManager.m */,
-				03CC893B2112E70900957274 /* PYAblumModel.h */,
-			);
-			path = PYAblumManager;
-			sourceTree = "<group>";
-		};
-		03CC893C2112E70900957274 /* PYAssesManager */ = {
-			isa = PBXGroup;
-			children = (
-				03CC893D2112E70900957274 /* PYAssetModel.h */,
-				03CC893E2112E70900957274 /* PYAssetManager.m */,
-				03CC893F2112E70900957274 /* PYAssetManager.h */,
-				03CC89402112E70900957274 /* PYAssetModel.m */,
-			);
-			path = PYAssesManager;
-			sourceTree = "<group>";
-		};
-		03CC89412112E70900957274 /* PYImageManager */ = {
-			isa = PBXGroup;
-			children = (
-				03CC89422112E70900957274 /* PYImageManager.h */,
-				03CC89432112E70900957274 /* PYImageManager.m */,
-			);
-			path = PYImageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,33 +506,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CC896C2112E70900957274 /* UITableView+PYAblumScroll.m in Sources */,
-				03CC89482112E70900957274 /* PYAssetListViewConfiguration.m in Sources */,
-				03CC89452112E70900957274 /* PYAssetListView.m in Sources */,
-				03CC89722112E70900957274 /* PYAblumManager.m in Sources */,
-				03CC897B2112E70900957274 /* PYImageManager.m in Sources */,
-				03CC89632112E70900957274 /* PYAblum.m in Sources */,
-				03CC896F2112E70900957274 /* PYAblumModel.m in Sources */,
-				03CC895A2112E70900957274 /* PYImageBrowserView.m in Sources */,
-				0321FCE1211327E1000CBCF6 /* PYImageBrowserViewControllerAnimatedTransition.m in Sources */,
-				03CC89602112E70900957274 /* RunloopManager.m in Sources */,
-				03CC895D2112E70900957274 /* PYImageBrowserScrollView.m in Sources */,
-				03CC89572112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m in Sources */,
-				03CC89692112E70900957274 /* UIImage+zip.m in Sources */,
-				03CC89542112E70900957274 /* PYImageBrowserViewController.m in Sources */,
+				033BCF44211DAFA5002558BF /* PYAblumManagerCommon.m in Sources */,
+				033BCF3B211DAFA5002558BF /* PYImageBrowserViewControllerAnimatedTransition.m in Sources */,
+				033BCF36211DAFA5002558BF /* PYAssetListViewConfiguration.m in Sources */,
+				033BCF45211DAFA5002558BF /* UIImage+zip.m in Sources */,
+				033BCF4A211DAFA5002558BF /* PYAssetModel.m in Sources */,
+				033BCF47211DAFA5002558BF /* PYAblumModel.m in Sources */,
+				033BCF3F211DAFA5002558BF /* PYImageBrowserCollectionViewFlowLayout.m in Sources */,
+				033BCF40211DAFA5002558BF /* PYImageBrowserView.m in Sources */,
+				033BCF49211DAFA5002558BF /* PYAssetManager.m in Sources */,
+				033BCF35211DAFA5002558BF /* PYAssetListView.m in Sources */,
+				033BCF3A211DAFA5002558BF /* PYImageBrowserViewViewControllerAnimater.m in Sources */,
+				033BCF4C211DAFA5002558BF /* PYAblumHeader.m in Sources */,
+				033BCF3D211DAFA5002558BF /* PYImageBrowserViewController.m in Sources */,
+				033BCF42211DAFA5002558BF /* RunloopManager.m in Sources */,
+				033BCF46211DAFA5002558BF /* UITableView+PYAblumScroll.m in Sources */,
 				03A8665C20EE1A0C00112211 /* ViewController.m in Sources */,
-				03CC897E2112E70900957274 /* PYAblumHeader.m in Sources */,
-				03FD9E4A211889B100B0FB51 /* PYImageBrowserViewControllerConfiguration.m in Sources */,
+				033BCF3E211DAFA5002558BF /* PYImageBrowserCollectionViewCell.m in Sources */,
 				03A8666720EE1A0D00112211 /* main.m in Sources */,
-				03CC89512112E70900957274 /* PYImageBrowserCollectionViewCell.m in Sources */,
-				0321FCED2113446D000CBCF6 /* UIColor+GetRGB.m in Sources */,
-				0321FCE421133099000CBCF6 /* PYImageBrowserViewViewControllerAnimater.m in Sources */,
-				03CC894E2112E70900957274 /* PYCamera.m in Sources */,
-				03CC894B2112E70900957274 /* PYAssetList_CollectionViewCell.m in Sources */,
+				033BCF38211DAFA5002558BF /* PYCamera.m in Sources */,
+				033BCF43211DAFA5002558BF /* PYAblum.m in Sources */,
+				033BCF48211DAFA5002558BF /* PYAblumManager.m in Sources */,
+				033BCF4B211DAFA5002558BF /* PYImageManager.m in Sources */,
+				033BCF37211DAFA5002558BF /* PYAssetList_CollectionViewCell.m in Sources */,
+				033BCF39211DAFA5002558BF /* UIColor+GetRGB.m in Sources */,
+				033BCF3C211DAFA5002558BF /* PYImageBrowserViewControllerConfiguration.m in Sources */,
 				03A8665920EE1A0C00112211 /* AppDelegate.m in Sources */,
-				03CC89662112E70900957274 /* PYAblumManagerCommon.m in Sources */,
-				03CC89782112E70900957274 /* PYAssetModel.m in Sources */,
-				03CC89752112E70900957274 /* PYAssetManager.m in Sources */,
+				033BCF41211DAFA5002558BF /* PYImageBrowserScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,26 +540,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CC89582112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m in Sources */,
-				03CC895E2112E70900957274 /* PYImageBrowserScrollView.m in Sources */,
-				03CC897F2112E70900957274 /* PYAblumHeader.m in Sources */,
-				03CC894C2112E70900957274 /* PYAssetList_CollectionViewCell.m in Sources */,
-				03CC895B2112E70900957274 /* PYImageBrowserView.m in Sources */,
-				03CC89702112E70900957274 /* PYAblumModel.m in Sources */,
-				03CC89792112E70900957274 /* PYAssetModel.m in Sources */,
-				03CC89492112E70900957274 /* PYAssetListViewConfiguration.m in Sources */,
-				03CC896A2112E70900957274 /* UIImage+zip.m in Sources */,
-				03CC89672112E70900957274 /* PYAblumManagerCommon.m in Sources */,
-				03CC896D2112E70900957274 /* UITableView+PYAblumScroll.m in Sources */,
-				03CC89612112E70900957274 /* RunloopManager.m in Sources */,
-				03CC89642112E70900957274 /* PYAblum.m in Sources */,
-				03CC894F2112E70900957274 /* PYCamera.m in Sources */,
-				03CC89462112E70900957274 /* PYAssetListView.m in Sources */,
-				03CC897C2112E70900957274 /* PYImageManager.m in Sources */,
-				03CC89762112E70900957274 /* PYAssetManager.m in Sources */,
-				03CC89522112E70900957274 /* PYImageBrowserCollectionViewCell.m in Sources */,
-				03CC89552112E70900957274 /* PYImageBrowserViewController.m in Sources */,
-				03CC89732112E70900957274 /* PYAblumManager.m in Sources */,
 				03A8667120EE1A0D00112211 /* PYAblumOCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,26 +548,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CC89592112E70900957274 /* PYImageBrowserCollectionViewFlowLayout.m in Sources */,
-				03CC895F2112E70900957274 /* PYImageBrowserScrollView.m in Sources */,
-				03CC89802112E70900957274 /* PYAblumHeader.m in Sources */,
-				03CC894D2112E70900957274 /* PYAssetList_CollectionViewCell.m in Sources */,
-				03CC895C2112E70900957274 /* PYImageBrowserView.m in Sources */,
-				03CC89712112E70900957274 /* PYAblumModel.m in Sources */,
-				03CC897A2112E70900957274 /* PYAssetModel.m in Sources */,
-				03CC894A2112E70900957274 /* PYAssetListViewConfiguration.m in Sources */,
-				03CC896B2112E70900957274 /* UIImage+zip.m in Sources */,
-				03CC89682112E70900957274 /* PYAblumManagerCommon.m in Sources */,
-				03CC896E2112E70900957274 /* UITableView+PYAblumScroll.m in Sources */,
-				03CC89622112E70900957274 /* RunloopManager.m in Sources */,
-				03CC89652112E70900957274 /* PYAblum.m in Sources */,
-				03CC89502112E70900957274 /* PYCamera.m in Sources */,
-				03CC89472112E70900957274 /* PYAssetListView.m in Sources */,
-				03CC897D2112E70900957274 /* PYImageManager.m in Sources */,
-				03CC89772112E70900957274 /* PYAssetManager.m in Sources */,
-				03CC89532112E70900957274 /* PYImageBrowserCollectionViewCell.m in Sources */,
-				03CC89562112E70900957274 /* PYImageBrowserViewController.m in Sources */,
-				03CC89742112E70900957274 /* PYAblumManager.m in Sources */,
 				03A8667C20EE1A0D00112211 /* PYAblumOCUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

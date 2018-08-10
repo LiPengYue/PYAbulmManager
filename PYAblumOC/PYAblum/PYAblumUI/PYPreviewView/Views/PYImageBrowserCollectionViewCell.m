@@ -42,6 +42,7 @@
 - (void)setupImageView {
     _imageBrowserImageView.image = [UIImage imageNamed:@"1."];
     _imageBrowserImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [_imageBrowserImageView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)setupScrollView {
@@ -75,8 +76,12 @@
     CGFloat height = [imageView.image getHeightWightWidth:w];
     imageW = w;
     imageH = height;
-    
-    imgframe = CGRectMake((w - imageW) / 2, (h - imageH) / 2, imageW, imageH);
+    CGFloat x = (w - imageW) / 2;
+    CGFloat y = (h - imageH) / 2;
+    x = x < 0 ? 0 : x;
+    y = y < 0 ? 0 : y;
+    imgframe = CGRectMake(x, y, imageW, imageH);
+//    self.scrollView.contentSize = imgframe.size;
     imageView.frame = imgframe;
     if (imageH < h) {
         self.scrollView.maximumZoomScale = h / imageH;
@@ -99,12 +104,19 @@
     self.backgroundColor = self.superview.backgroundColor;
 }
 - (void)dealloc {
+    [self.imageBrowserImageView removeObserver:self forKeyPath:@"image"];
     NSLog(@"✅%@",NSStringFromClass([self classForCoder]));
 }
 
 #pragma mark - setter
 
 #pragma mark - getter or lazy load
+#pragma mark - observe
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"image"] && object == self.imageBrowserImageView) {
+        [self layout];
+    }
+}
 
 #pragma mark - delegate or dataSource
 
@@ -227,7 +239,7 @@
     CGFloat offsetY = (boundsH > contentSizeH) ? (boundsH - contentSizeH) * 0.5 : 0.0;
     
     _imageBrowserImageView.center = CGPointMake(contentSizeW * 0.5 + offsetX, contentSizeH * 0.5 + offsetY);
-    self.scrollView.contentSize = _imageBrowserImageView.frame.size;
+//    self.scrollView.contentSize = _imageBrowserImageView.frame.size;
     self.scrollView.bounces = true;
     
     if ([self.delegate respondsToSelector:@selector(scrollViewDidZoom:index:)]) {

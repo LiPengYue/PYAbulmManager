@@ -186,6 +186,7 @@ static NSString * const CELLID = @"CELLID";
             cell = [self.delegate collectionView:collectionView
                                          andCell:browserCell
                                     andIndexPath:indexPath];
+            
         }
         
         browserCell.delegate = self;

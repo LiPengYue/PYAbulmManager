@@ -45,5 +45,5 @@
 
 - (void)getOriginImage:(void(^)(UIImage *image)) block;
 
-- (void)getDelicateImage: (void(^)(UIImage *image))block;
+- (void)getDelicateImageWidth: (CGFloat)imageW andBlock:(void(^)(UIImage *image))block;
 @end

@@ -10,19 +10,12 @@
 #import "PYImageBrowserView.h"
 #import "PYImageBrowserViewControllerConfiguration.h"
 #import "PYImageBrowserCollectionViewCell.h"
-struct PYImageBrowserViewDefaultAnimation {
-  
-};
 
 @class PYImageBrowserViewController;
 @protocol PYImageBrowserViewControllerDataSource <NSObject>
 
 
-/**
- 设置collectionView 懒加载collectionView的时候回调用，可以进行cell的register
- @param collectionView collectionView
- */
-- (void) setUpCollectionView: (UICollectionView *) collectionView;
+
 
 /**
  一共多少个图片需要展示
@@ -40,22 +33,16 @@ struct PYImageBrowserViewDefaultAnimation {
 - (UICollectionViewCell *)collectionView: (UICollectionView *) collectionView
                                  andCell:(PYImageBrowserCollectionViewCell *) cell
                             andIndexPath:(NSIndexPath *)indexPath;
+/**
+ 设置collectionView 懒加载collectionView的时候回调用，可以进行cell的register
+ @param collectionView collectionView
+ */
+@optional
+- (void) setUpCollectionView: (UICollectionView *) collectionView;
 @end
 
 
 @protocol PYImageBrowserViewControllerDelegate <NSObject>
-
-- (void)singleTapEventFonc: (PYImageBrowserCollectionViewCell *) cell andTap: (UITapGestureRecognizer *)tap;
-
-- (void)doubleTapEventFonc: (PYImageBrowserCollectionViewCell *) cell andTap: (UITapGestureRecognizer *)tap;
-
-- (void)pullDowningFunc: (PYImageBrowserCollectionViewCell *) cell
-          andScrollView:(UIScrollView *)scrollView;
-
-- (void)scrollViewDidZoom: (PYImageBrowserCollectionViewCell *)cell
-                    index: (NSIndexPath *)index
-     changeIndexPathArray: (NSArray <NSIndexPath *>*)indexArray;
-
 
 /**
  当dismiss之前调用，需要返回当前index对应的dismiss动画图片目的地的view
@@ -65,6 +52,17 @@ struct PYImageBrowserViewDefaultAnimation {
     如果返回nil，将会执行 设置好的默认动画
  */
 - (CGRect)dismissWithCurrenCell: (PYImageBrowserCollectionViewCell *)cell andIndex: (NSIndexPath *)index;
+@optional
+- (void)singleTapEventFonc: (PYImageBrowserCollectionViewCell *) cell andTap: (UITapGestureRecognizer *)tap;
+@optional
+- (void)doubleTapEventFonc: (PYImageBrowserCollectionViewCell *) cell andTap: (UITapGestureRecognizer *)tap;
+@optional
+- (void)pullDowningFunc: (PYImageBrowserCollectionViewCell *) cell
+          andScrollView:(UIScrollView *)scrollView;
+@optional
+- (void)scrollViewDidZoom: (PYImageBrowserCollectionViewCell *)cell
+                    index: (NSIndexPath *)index
+     changeIndexPathArray: (NSArray <NSIndexPath *>*)indexArray;
 @end
 
 

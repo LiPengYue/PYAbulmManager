@@ -121,9 +121,9 @@ typedef enum {
         image = image == nil ? assetModel.degradedImage : image;
         image = image == nil ? assetModel.originImage : image;
         if (!assetModel.delicateImage) {
-            [assetModel getDelicateImage:^(UIImage *image) {
+            [assetModel getDelicateImageWidth:300 andBlock:^(UIImage *image) {
                 cell.imageBrowserImageView.image = image;
-            }];
+            }]; 
         }
         cell.imageBrowserImageView.image = image;
     }

@@ -15,6 +15,7 @@
 #import "PYCamera.h"
 #import "UIImage+zip.h"
 
+#import "PYImageBrowserViewController.h"
 @interface PYAblumHeader : NSObject
 
 @end

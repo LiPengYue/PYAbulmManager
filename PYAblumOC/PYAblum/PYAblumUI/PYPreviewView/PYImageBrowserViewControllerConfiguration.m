@@ -15,8 +15,8 @@
     if (self) {
         self.pullDownDismissDefaultDistance = 100;
         self.dismissDefaultWidth = 200;
-        self.presentAnimationDefaultDuration = 0.5;
-        self.dismissAnimationDefaultDuration = 0.4;
+        self.presentAnimationDefaultDuration = 0.3;
+        self.dismissAnimationDefaultDuration = 0.2;
         self.alphaIncrementingCount = 0.025;
     }
     return self;

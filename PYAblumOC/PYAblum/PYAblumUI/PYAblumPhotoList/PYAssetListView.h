@@ -46,8 +46,7 @@
  * 点击了imageView
  */
 @required
-- (void)clickImageViewWithClickModel: (PYAssetModel *)model andModelArray: (NSArray<PYAssetModel*>*) modelArray andSelectedIndex: (NSInteger)index
-                             andCell: (PYAssetList_CollectionViewCell *)cell;
+- (void)clickImageViewWithClickModel: (PYAssetModel *)model andModelArray: (NSArray<PYAssetModel*>*) modelArray andSelectedIndex: (NSInteger)index andCell: (PYAssetList_CollectionViewCell *)cell;
 
 @end
 
